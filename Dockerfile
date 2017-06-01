@@ -25,19 +25,11 @@ RUN gcloud components install \
       app-engine-python \
       app-engine-python-extras \
       app-engine-go \
-      app-engine-java
-RUN gcloud components install \
-      cbt \
-      bigtable \
-      datalab \
+      app-engine-java \
       cloud-datastore-emulator \
-      gcd-emulator \
       pubsub-emulator \
-      emulator-reverse-proxy \
-      docker-credential-gcr \
       alpha \
-      beta \
-      kubectl
+      beta
 
 VOLUME ["/root/.config"]
 
