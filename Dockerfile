@@ -1,6 +1,6 @@
 FROM docker:17.12.0-ce as static-docker-source
 
-FROM python:3.7.2-stretch
+FROM python:2.7.15-stretch
 
 ARG CLOUD_SDK_VERSION=261.0.0
 ENV CLOUD_SDK_VERSION=$CLOUD_SDK_VERSION
