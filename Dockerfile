@@ -1,6 +1,6 @@
-FROM cimg/node:16.15
+FROM cimg/node:18.19
 
-ARG CLOUD_SDK_VERSION=386.0.0
+ARG CLOUD_SDK_VERSION=456.0.0
 ENV CLOUD_SDK_VERSION=$CLOUD_SDK_VERSION
 
 RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list && \
